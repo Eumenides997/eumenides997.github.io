@@ -31,6 +31,10 @@
  #Bottom_a{
      color: white;
  }
+ body{
+     overflow:scroll; 
+     overflow-x:auto;
+ }
  img{
      width: 100%;
  }
