@@ -1,0 +1,30 @@
+.contain{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+.head{
+    border: 1px solid black;
+    float: top;
+    width: 100%;
+    text-align: center;
+}
+.left{
+    border: 1px solid black;
+    float: left;
+    width: 30%;
+}
+.right{
+    border: 1px solid black;
+    float: right;
+    width: 69%;
+}
+.right_top{
+    border: 1px solid black;
+    width: 100%;
+}
+.right_down{
+    border: 1px solid black;
+    width: 100%;
+
+ }
