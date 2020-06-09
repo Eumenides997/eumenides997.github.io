@@ -4,85 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="mystyle.css" rel="stylesheet" type="text/css" />
-    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="jquery-1.9.1.min.js"></script>
-    <script src="bootstrap.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.js"></script> 
 </head>
 <body>
     <div class="contain">
         <div class="head">
-            <h1>来杯咖啡吗？</h1>
+            <h1>来看部电影？</h1>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
+        <div class="row">
+            <div class="col-4">
                 <div class="left">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">
-                            拿铁
-                          </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">
-                            卡布奇诺
-                          </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">
-                            奥瑞白
-                          </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">
-                            美式咖啡
-                          </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">
-                            焦糖玛奇朵
-                          </a>
-                        </li>
-                      </ul>
+                    <ul>
+                        <li><a href="javascript:;" onclick="openbox1()">八英里</a></li>
+                        <li><a href="javascript:;" onclick="openbox2()">小丑2019</a></li>
+                        <li><a href="javascript:;" onclick="openbox3()">寄生兽</a></li>
+                        <li><a href="javascript:;" onclick="openbox4()">杀手不太冷</a></li>
+                        <li><a href="javascript:;" onclick="openbox5()">我是去了身体</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="form-group col-md-8">
+            <div class="col-8">
                 <div class="right">
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
-                            <div id="page1"></div>
-                            <script>
-                                $("#page1").load("page1.html");
-                            </script>
-                        </div>
-                        <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-                            <div id="page2"></div>
-                            <script>
-                                $("#page2").load("page2.html");
-                            </script>
-                        </div>
-                        <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
-                            <div id="page3"></div>
-                            <script>
-                                $("#page3").load("page3.html");
-                            </script>
-                        </div>
-                        <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
-                            <div id="page4"></div>
-                            <script>
-                                $("#page4").load("page4.html");
-                            </script>
-                        </div>
-                        <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
-                            <div id="page5"></div>
-                            <script>
-                                $("#page5").load("page5.html");
-                            </script>
-                        </div>
-                    </div>
+                    <div id="box1"></div>
+                    <script>
+                        $("#box1").load("page1.html");
+                    </script>
+                    <div id="box2"></div>
+                    <script>
+                        $("#box2").load("page2.html");
+                    </script>
+                    <div id="box3"></div>
+                    <script>
+                        $("#box3").load("page3.html");
+                    </script>
+                    <div id="box4"></div>
+                    <script>
+                        $("#box4").load("page4.html");
+                    </script>
+                    <div id="box5"></div>
+                    <script>
+                        $("#box5").load("page5.html");
+                    </script>
                 </div>
             </div>
+        </div>
+        <div class="Bottom">
+            <a id="Bottom_a">版权所有&copyZZhenQiang</a>
         </div>
     </div>
+    <script type="text/javascript">
+        var box1=document.getElementById('box1');
+        var box2=document.getElementById('box2');
+        var box3=document.getElementById('box3');
+        var box4=document.getElementById('box4');
+        var box5=document.getElementById('box5');
+        function openbox1(){
+            box1.style.display='block';
+            box2.style.display='none';
+            box3.style.display='none';
+            box4.style.display='none';
+            box5.style.display='none';
+        }
+        function openbox2(){
+            box1.style.display='none';
+            box2.style.display='block';
+            box3.style.display='none';
+            box4.style.display='none';
+            box5.style.display='none';
+        }
+        function openbox3(){
+            box1.style.display='none';
+            box2.style.display='none';
+            box3.style.display='block';
+            box4.style.display='none';
+            box5.style.display='none';
+        }
+        function openbox4(){
+            box1.style.display='none';
+            box2.style.display='none';
+            box3.style.display='none';
+            box4.style.display='block';
+            box5.style.display='none';
+        }
+        function openbox5(){
+            box1.style.display='none';
+            box2.style.display='none';
+            box3.style.display='none';
+            box4.style.display='none';
+            box5.style.display='block';
+        }
+    </script>
 </body>
 </html>
