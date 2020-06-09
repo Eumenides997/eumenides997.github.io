@@ -5,34 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="mystyle.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="bootstrap.js"></script>
 </head>
 <body>
     <div class="contain">
         <div class="head">
             <h1>来杯咖啡吗？</h1>
         </div>
-        <div class="left">
-            <ul>
-                <li><a href="">拿铁</a></li>
-                <li><a href="">卡布奇诺</a></li>
-                <li><a href="">奥瑞白</a></li>
-                <li><a href="">美式咖啡</a></li>
-                <li><a href="">焦糖玛奇朵</a></li>
-            </ul>
-        </div>
-        <div class="right">
-            <div class="right_top">
-                pic
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <div class="left">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">
+                            拿铁
+                          </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">
+                            卡布奇诺
+                          </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">
+                            奥瑞白
+                          </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">
+                            美式咖啡
+                          </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">
+                            焦糖玛奇朵
+                          </a>
+                        </li>
+                      </ul>
+                </div>
             </div>
-            <div class="right_down">
-                <p>“拿铁”是意大利文"Latte”"的音译，拿铁咖啡拿铁咖啡(6张)
-                    拿铁咖啡(CoffeeL atte)是花式咖啡的一种，是咖啡与牛奶交融
-                    的极至之作。意式拿铁咖啡为纯牛奶加咖啡，美式拿铁则将
-                    部分牛奶替换成奶泡，本地的拿铁多为此种。那句著名
-                    的“我不在咖啡馆，就在去咖啡馆的路上”是- - -位音乐家在维
-                    也纳说出来的。维也纳的空气里，永远都飘荡着音乐和拿铁
-                    (Latte)咖啡的味道。
-                    </p>
+            <div class="form-group col-md-8">
+                <div class="right">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                            <div id="page1"></div>
+                            <script>
+                                $("#page1").load("page1.html");
+                            </script>
+                        </div>
+                        <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                            <div id="page2"></div>
+                            <script>
+                                $("#page2").load("page2.html");
+                            </script>
+                        </div>
+                        <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                            <div id="page3"></div>
+                            <script>
+                                $("#page3").load("page3.html");
+                            </script>
+                        </div>
+                        <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                            <div id="page4"></div>
+                            <script>
+                                $("#page4").load("page4.html");
+                            </script>
+                        </div>
+                        <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                            <div id="page5"></div>
+                            <script>
+                                $("#page5").load("page5.html");
+                            </script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

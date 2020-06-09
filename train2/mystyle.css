@@ -11,13 +11,11 @@
 }
 .left{
     border: 1px solid black;
-    float: left;
-    width: 30%;
+    width: 100%;
 }
 .right{
     border: 1px solid black;
-    float: right;
-    width: 69%;
+    width: 100%;
 }
 .right_top{
     border: 1px solid black;
