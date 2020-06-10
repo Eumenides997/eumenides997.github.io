@@ -6,6 +6,7 @@ body{
     overflow:scroll; 
     overflow-x:auto;
     text-align: center;
+    background-color:#CCCCCC;
 }
 img{
     width: 100%;
@@ -27,7 +28,7 @@ p{
     margin-left: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color:#CCCCCC;
+    background-color:whitesmoke;
 }
 .head{
     width: 100%;
