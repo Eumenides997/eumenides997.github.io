@@ -5,7 +5,6 @@ body{
     margin: 0;
     overflow:scroll; 
     overflow-x:auto;
-    text-align: center;
     background-color:#CCCCCC;
 }
 hr {
@@ -23,7 +22,7 @@ img{
 img:hover{
     height: 20vw;
 }
-h2{
+.h2{
     font-size: 24px;
 }
 p{
@@ -39,9 +38,27 @@ p{
     background-color:whitesmoke;
 }
 .head{
+    position: relative;
     width: 100%;
-    float: top;
     background-color: #666699;
+}
+.head>a{
+    padding-left: 2%;
+}
+.head>ul{
+    float: right;
+    padding-right: 2%;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.head>ul>li{
+    float: left;
+    padding-right: 20px;
+}
+.head>ul>li>a{
+    font-size: 16px;
+    color: white;
 }
 .goods{
     width: 24%;
@@ -66,6 +83,7 @@ p{
     float: left;
     margin-left: 20%;
     margin-top: 2%;
+    text-align: center;
 }
 .middle_top{
     width: 100%;
@@ -79,5 +97,6 @@ p{
     width: 100%;
     float: left;
     margin-top: 2%;
+    text-align: center;
     background-color: #666699;
 }
