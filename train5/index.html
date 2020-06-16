@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/myjs.js"></script>
+</head>
+<body>
+    <div class="contain">
+        <div class="head"></div>
+        <div class="middle">
+            <div class="words_screen" id="words_screen"></div>
+            <hr>
+            <div class="words_input">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" id="text1_input" value="弹幕">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" class="btn btn-secondary" id="btn_go_one" value="发射一条" onclick="go_one()">
+                                <input type="button" class="btn btn-secondary" id="btn_go_loop" value="循环发射" onclick="go_loop()">
+                                <input type="reset" class="btn btn-secondary" value="重置">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="foot"></div>
+    </div>
+</body>
+</html>
