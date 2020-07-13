@@ -20,6 +20,8 @@ function getQueryVariable(variable) {
     }
     return null;
 }
+
+console.log('lanuage is : ' + getQueryVariable('language'))
 const Header = (props) => {
     const menuItems = [
         'All',
@@ -74,6 +76,7 @@ class App extends React.Component {
     }
     handleNavClick = async (type = 'all', page = 1, pushState = true) => {
         const {cards} = this.state
+        console.log('type', type)
         var url = ''
         switch (type) {
             case 'Javascript':
@@ -91,7 +94,7 @@ class App extends React.Component {
             default:
                 url = 'https://api.github.com/search/repositories?q=stars:%3E1&sort=stars&order=desc&type=Repositories'
         }
-        url = `${url}&page=${page}&per_page=8`
+        url = `${url}&page=${page}&per_page=10`
         try {
             var beforeState = { type, loading: true, error: null, lang: type }
             if (page === 1) {
@@ -102,6 +105,7 @@ class App extends React.Component {
             }
             this.setState(beforeState)
             const res = await axios.get(url)
+            console.log('res', res.data)
             const newCards = res.data.items.map((item, key) => ({
                 no: '#' + (page === 1 ? 1 + key : cards.length + 1 + key),
                 img: item.owner.avatar_url,
@@ -150,6 +154,7 @@ class App extends React.Component {
                 <Header onClick={this.handleNavClick} activeKey={lang}>
                 </Header>
                 <Content>
+
                     <Row className="justify-content-around">
                         {cards.map((item, key) => <Col sm={6} md={4} lg={3} key={key}>
                             <RepoCard no={item.no}
@@ -164,6 +169,9 @@ class App extends React.Component {
                         </Col>)}
                     </Row>
                     <div className="text-center">
+                        {error && <Alert variant="danger" >{error.response.status} {error.response.statusText}</Alert>}
+                    </div>
+                    <div className="text-center">
                         <Button onClick={this.loadMore} disabled={loading}> {loading && <Spinner
                             as="span"
                             animation="grow"
@@ -175,7 +183,7 @@ class App extends React.Component {
                 </Content>
                 <Footer>
                     <div className="text-center">
-                        版权所有 &copy; ZZhenqiang
+                        版权所有 &copy; liuwencan
             </div>
                 </Footer>
             </div>
