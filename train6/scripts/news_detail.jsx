@@ -45,7 +45,7 @@ class App extends React.Component {
     render() {
         const { newText } = this.state
         return(
-        <div className="text">
+        <div className="container">
                 <div className="index">
                     <div dangerouslySetInnerHTML = {{ __html:'<br>'+this.state.newText+'<br>' }}></div>
                 </div>
