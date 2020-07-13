@@ -13,8 +13,8 @@ const RepoCard = (props) => (<Card className="card">
         <Card.Text>{props.title}</Card.Text>
         <Card.Img src="img/1.png" data-src={props.img} className="lazyload" />
         <Card.Text>{props.content}</Card.Text>
-        <Card.Text>{props.date}</Card.Text>
-        <Button className="button bg-dark"onClick={() => readNew(props.id)}>详情</Button>
+        <Card.Text><i className="fa fa-calendar" aria-hidden="true"></i>{props.date}</Card.Text>
+        <Button className="button bg-dark"onClick={() => readNew(props.id)}>查看文章</Button>
     </Card.Body>
 </Card>)
 
@@ -42,7 +42,7 @@ class App extends React.Component {
             title: item.fields.title,
             img: 'https://mjuruankai.com' + item.fields.cover_image,
             content: item.fields.content,
-            date: item.fields.date_created,
+            date: new Date(item.fields.date_created).getFullYear()+'-'+new Date(item.fields.date_created).getMonth()+'-'+new Date(item.fields.date_created).getDate(),
             id: item.pk
         }))
         this.setState((state, props) => {
