@@ -135,3 +135,9 @@
  #box5{
      display: none;
  }
+ .inside p{
+    text-indent: 2em;
+ }
+ .inside p::first-letter{
+     font-size: 32px;
+ }
