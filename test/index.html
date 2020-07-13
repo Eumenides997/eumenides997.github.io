@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <input type="button" id="btn_a" value="a">
+    <script>
+        $(document).ready(function (){
+            $('#container').text('99999');
+            $('#btn_a').click(function (){
+                $('#container').text($('#container').text()+1);
+            });
+        });
+    </script>
+</body>
+</html>
