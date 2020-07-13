@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mystyle.css">
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/bootstrap.js"></script> 
-    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">首页</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">新闻</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">关于我们</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-    <br>
-    <h2>关于我们</h2><hr>
-    <div class="container" id="container"></div>
-    <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script
-  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    </script>
-    <script type="text/javascript"
-    src="https://api.map.baidu.com/api?v=2.0&ak=d2xSp70cZxKgiyeGRb8ACTlTEVwEkrHS"></script>
-    <script type="text/babel" src="scripts/map.jsx">
-    </script>    
-    <br>
-    <div class="foot_outside">
-      <div class="container">
-        <div class="foot">
-          <div class="foot_left">
-            <p>我认为没有任何一棵花株是理应受到清理的——不仅是被迫长歪的那株，其他所有的花株，不管它们是否妨碍到别人，我们都缺乏足够的理由去惩罚它们。因为每一株花都有自己的“因果”我们根本无法 追溯出一个真正的纯粹的“罪恶之源”
-            </p>
-          </div>
-          <div class="foot_right">
-            <img src="img/二维码_不会吧不会吧.png" alt="">
-          </div>
-          <div class="foot_down">
-            <a name="foot_a">版权所有&copyZZhenQiang</a>
-          </div>
-          
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img class="icon" src="img/图标.jpg" alt="">忍者世界</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="margin-left: 70%;">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="news.html">新闻</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">关于我们</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <h2>关于我们</h2>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="container" id="container"></div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="container">
+          <p class="p1">集合了影、忍、暗、叛、爱、恨、义、情等元素，包括了追踪、侦察、谍报、护送、暗杀等多方面的内容，大力渲染了令人向往的忍者生活的真实性，以及亲自操作火影忍者中的精彩忍术，体验漫画中熟悉的忍术打斗所带来的空前刺激，令人大喊畅快。而游戏中一张张亲切又熟悉的脸孔，让人在游戏中感受置身于火影忍者世界，体验神秘精彩的忍者生涯，感受义薄云天的刎颈之交。</p>
+          <p><i class="fa fa-taxi fa-fw" aria-hidden="true"></i>：不在这个世界，找不到我们的</p>
+          <p><i class="fa fa-envelope-open-o fa-fw" aria-hidden="true"></i>：1213asd@askdjawdj.com</p>
+          <p><i class="fa fa-phone fa-fw" aria-hidden="true"></i>：12412314124</p>
         </div>
       </div>
     </div>
+  </div>
+  <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </script>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=d2xSp70cZxKgiyeGRb8ACTlTEVwEkrHS"></script>
+  <script type="text/babel" src="scripts/map.jsx">
+  </script>
+  <br>
+  <div class="foot_outside">
+    <div class="container">
+      <div class="foot">
+        <div class="foot_left">
+          <p><i class="fa fa-taxi fa-fw" aria-hidden="true"></i>：不在这个世界，找不到我们的</p>
+          <p><i class="fa fa-envelope-open-o fa-fw" aria-hidden="true"></i>：1213asd@askdjawdj.com</p>
+          <p><i class="fa fa-phone fa-fw" aria-hidden="true"></i>：12412314124</p>
+        </div>
+        <div class="foot_right">
+          <img src="img/二维码_不会吧不会吧.png" alt="">
+        </div>
+        <div class="foot_down">
+          <a name="foot_a">版权所有&copyZZhenQiang</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
